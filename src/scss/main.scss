@@ -101,6 +101,100 @@ video {
   gap: 12px;
 }
 
-// ---------------------------------------------
-// Votre code ici :
-// ---------------------------------------------
+.marker .product-cart {
+  opacity: 0%;
+  transition-property: opacity, background;
+  transition: 0.5s;
+}
+
+.marker:hover .product-cart {
+  opacity: 100%;
+}
+
+.marker .product-cart:hover {
+  background: var(--blue);
+}
+
+.pencil .product-cart {
+  opacity: 0%;
+  transition-property: opacity, background, transform 0.5s;
+  transition: 0.5s;
+  transform: translateY(-100px);
+}
+
+.pencil:hover .product-cart {
+  opacity: 100%;
+  transform: translateY(0px);
+}
+
+.pencil .product-cart:hover {
+  background: var(--blue);
+}
+
+.scissors {
+  transition: background 0.5s;
+}
+
+.scissors:hover {
+  background: var(--blue);
+}
+
+.scissors .product-title {
+  transition: color 0.5s;
+}
+
+.scissors:hover .product-title {
+  color: var(--gray);
+}
+
+.scissors .product-price {
+  transition: color 0.5s;
+}
+
+.scissors:hover .product-price {
+  color: var(--gray);
+}
+
+.sketchbook .product-image img {
+  transition: transform 0.5s;
+}
+
+.sketchbook .product-image:hover img {
+  transform: scale(1.3);
+}
+
+.sketchbook .product-image {
+  overflow: hidden;
+}
+
+.glue .product-image img {
+  transition: filter 0.5s ease;
+  filter: blur(3px);
+}
+
+.glue .product-image:hover img {
+  filter: blur(0px);
+}
+
+.glue .product-image {
+  overflow: hidden;
+}
+
+.share .share-list .share-icon {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0%;
+  transform: translateY(-30px);
+}
+
+.share:hover .share-list .share-icon {
+  opacity: 100%;
+  transform: translateY(0px);
+}
+
+.share .share-list .share-icon:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.share .share-list .share-icon:nth-child(3) {
+  transition-delay: 0.4s;
+}
